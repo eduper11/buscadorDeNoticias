@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Notice = ({ notice }) => {
     //extraer los datos de la noticia
 
     const {
-        author,
-        content,
+        // author,
+        // content,
         description,
-        publishedAt,
+        // publishedAt,
         title,
         url,
         urlToImage,
@@ -45,6 +46,10 @@ const Notice = ({ notice }) => {
             </div>
         </div>
     );
+};
+
+Notice.propType = {
+    notice: PropTypes.array.isRequired
 };
 
 export default Notice;

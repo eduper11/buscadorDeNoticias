@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import PropTypes from 'prop-types';
+
 class Form extends Component {
     state = {
         category: 'general'
@@ -42,5 +44,9 @@ class Form extends Component {
         );
     }
 }
+
+Form.propType = {
+    consultNotices: PropTypes.func.isRequired
+};
 
 export default Form;
